@@ -33,6 +33,8 @@ public class BlackjackClient {
         stompClient.setMessageConverter(new MappingJackson2MessageConverter());
 
         stompClient.connect(URL, headers, new BlackjackSessionHandler());
-        Thread.sleep(60000);
+        // Sleep for an hour. Meaning the client will play for an hour before quitting.
+        // This should be more than ample time to get through.
+        Thread.sleep(600000);
     }
 }
