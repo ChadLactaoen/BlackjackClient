@@ -49,6 +49,20 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.4</version>
         </dependency>
+        <dependency>
+            <groupId>com.lactaoen.blackjack.model</groupId>
+            <artifactId>blackjack-models</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/../Blackjack/target/blackjack-1.0-SNAPSHOT.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>com.lactaoen.blackjack.exception</groupId>
+            <artifactId>blackjack-models</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/../Blackjack/target/blackjack-1.0-SNAPSHOT.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <properties>
