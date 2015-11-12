@@ -43,12 +43,12 @@ First, make sure you've run the Blackjack server as described in its documentati
 On you laptop, go to your terminal and into a preferred directory for programming applications.
 
 
-*For the two commands below, you can use another directory name. Just make sure that the two repos you will be cloning have the same parent directory.*
+* For the two commands below, you can use another directory name. Just make sure that the two repos you will be cloning have the same parent directory.*
 
 	mkdir blackjack-challenge
 	cd blackjack-challenge
 
-*Be sure to plug in your own github username in place of your-github-username*
+* Be sure to plug in your own github username in place of your-github-username*
 
 	git clone git@github.com:your-github-username/Blackjack.git
 	git clone git@github.com:your-github-username/BlackjackClient.git
@@ -62,7 +62,12 @@ From parent folder (e.g., blackjack-challenge)
 	mvn clean install
 	
 ### Test out your Blackjack Server locally (optional)
-<mark>TODO: directions</mark>
+
+* From the directory where you have pulled the Blackjack server code into, there should be a jar file that you can run via terminal located in the `target` folder. The command to run the file would look something like this:
+
+`java -jar target/blackjack-1.0-SNAPSHOT.jar`
+
+* Once that has started up, you can open your favorite browser and go to `localhost:8080` to see the blackjack UI. Click the `Connect` button, where you can either play a game manually, or connect your client and watch it play against the dealer in the UI.
 
 ### Test out your Blackjack Client Shell
 <mark>TODO: directions</mark>
