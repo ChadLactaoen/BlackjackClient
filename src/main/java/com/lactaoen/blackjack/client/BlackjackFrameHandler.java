@@ -24,8 +24,6 @@ public class BlackjackFrameHandler implements StompFrameHandler {
 
     private StompSession session;
     private String playerId;
-    private int seatNum;
-    private GameInfoWrapper history;
 
     public BlackjackFrameHandler(StompSession session) {
         this.session = session;
@@ -55,7 +53,6 @@ public class BlackjackFrameHandler implements StompFrameHandler {
         if (o.getClass() == PlayerInfo.class) {
             // If it gets here, we probably just registered. Store the playerId for use later in the game
             this.playerId = ((PlayerInfo) o).getPlayerId();
-            this.seatNum = ((PlayerInfo) o).getSeatNum();
 
             // After we get the playerId, you'll probably want to check if we can bet.
             // If so, you could do that here.
@@ -74,7 +71,6 @@ public class BlackjackFrameHandler implements StompFrameHandler {
             // a hand action here.
 
             GameInfoWrapper game = (GameInfoWrapper) o;
-            history = game;
 
             if (game.getGameStatus() == Round.BETTING_ROUND) {
                 session.send("/app/bet", new BetWrapper(playerId, 100));
