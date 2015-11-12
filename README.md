@@ -16,10 +16,24 @@ First, make sure you've run the Blackjack server as described in its documentati
 	* NOTE: Only needed to run the server locally OR if you'd like to write code using java 8.
 	* You can verify by running `java -version` in terminal
 * Maven
-	* The client skeleton code provded uses Maven, so if you choose to use this client code, this is definitely needed.
-	* Check if maven is already installed by running `mvn -version` in terminal
-		* You can download maven [here](http://apache.cs.utah.edu/maven/maven-3/3.3.3/binaries/apache-maven-3.3.3-bin.zip)
-		* After install, add environment variables (Kelly can help with this)
+	* The client skeleton code provided uses Maven, so if you choose to use this client code, this is definitely needed.
+
+	* **Mac**
+		* Check if maven is already installed by running `mvn -version` in terminal
+
+		* If you don't have it installed, first download the binary files:
+			* https://maven.apache.org/download.cgi
+			* select *Binary zip archive*
+		* Now run these directions: http://stackoverflow.com/a/19002869
+
+	* **Windows**
+		* Check if maven is already installed by running `mvn -version` in terminal
+
+		* If you don't have it installed, first download the binary files:
+			* https://maven.apache.org/download.cgi
+			* select *Binary zip archive*
+			
+		* After install, add environment variables
 			* Add location of unzipped bin folder inside maven to the `PATH` environment variable
 			* Add environment variable for location of `JAVA_HOME`
 				* Windows users can refer [here](http://crunchify.com/how-to-setupinstall-maven-classpath-variable-on-windows-7/)
