@@ -70,8 +70,10 @@ From parent folder (e.g., blackjack-challenge)
 * Once that has started up, you can open your favorite browser and go to `localhost:8080` to see the blackjack UI. Click the `Connect` button, where you can either play a game manually, or connect your client and watch it play against the dealer in the UI.
 
 ### Test out your Blackjack Client Shell
-<mark>TODO: directions</mark>
-
+* Make sure your server is running
+* Open a browser and go to http://localhost:8080/ and click __Connnect__
+* No in the folder of your Client, run `mvn clean compile exec:java`
+* In the browser, you should see your client playing.
 
 ### Time to code some logic into your BlackjackClient!
 
